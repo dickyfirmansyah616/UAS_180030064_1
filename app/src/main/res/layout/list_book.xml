@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="200dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="@dimen/small_margin"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_book"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:gravity="center"
+            android:text="@string/judul_book"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/small_text3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_penulis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/penulis"
+            android:textSize="@dimen/small_text2" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
